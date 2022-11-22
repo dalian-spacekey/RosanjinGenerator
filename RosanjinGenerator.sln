@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RosanjinGenerator", "RosanjinGenerator\RosanjinGenerator.csproj", "{ED50E418-4BC9-4014-96AB-737C2CCB5564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentGenerator", "ContentGenerator\ContentGenerator.csproj", "{598D06B1-AEDA-4DF9-87CC-5BF6BAE66010}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED50E418-4BC9-4014-96AB-737C2CCB5564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED50E418-4BC9-4014-96AB-737C2CCB5564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED50E418-4BC9-4014-96AB-737C2CCB5564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED50E418-4BC9-4014-96AB-737C2CCB5564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598D06B1-AEDA-4DF9-87CC-5BF6BAE66010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598D06B1-AEDA-4DF9-87CC-5BF6BAE66010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598D06B1-AEDA-4DF9-87CC-5BF6BAE66010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598D06B1-AEDA-4DF9-87CC-5BF6BAE66010}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C41A072-6917-4793-A742-636F99F6501B}
+	EndGlobalSection
+EndGlobal

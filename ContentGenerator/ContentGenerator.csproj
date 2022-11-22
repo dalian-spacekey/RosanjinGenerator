@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibNMeCab" Version="0.10.2" />
+    <PackageReference Include="LibNMeCab.IpaDicBin" Version="0.10.0" />
+  </ItemGroup>
+
+</Project>

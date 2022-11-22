@@ -1,0 +1,49 @@
+﻿@page "/"
+@using RosanjinGenerator.Services
+
+<PageTitle>魯山人Generator</PageTitle>
+
+<div class="container m-auto px-2 px-lg-5">
+    <div class="mb-3">
+        北王子魯山人風のテキストを雑に生成します。
+    </div>
+    <div class="my-3">
+        <textarea class="form-control" id="paragraph" rows="10">
+            @paragraph
+        </textarea>
+    </div　>
+    <form @onsubmit="Submit">
+        <div class="row my-3">
+            <div class="col-auto">
+                <label for="paragraphCount" class="form-label">段落数</label>
+                <input type="number" class="form-control" id="paragraphCount" maxlength="10" @bind="paragraphCount">
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">生成</button>
+            </div>
+        </div>
+    </form>
+    <hr/>
+    <h3>出典</h3>
+    <a href="https://www.aozora.gr.jp/">青空文庫</a>
+    <ul>
+        <li><a href="https://www.aozora.gr.jp/cards/001403/card49986.html">だしの取り方</a></li>
+        <li><a href="https://www.aozora.gr.jp/cards/001403/card54986.html">料理一夕話</a></li>
+    </ul>
+</div>
+
+@code
+{
+    [Inject]
+    RosanjinService RosanjinService { get; set; } = default!;
+
+    string paragraph = "　早い話があっても、塩じゃけを焼いたりして、なんのいぶかりもなく、華岳の話ほど当てにならぬというようなものだね。";
+    int paragraphCount = 3;
+
+    void Submit()
+    {
+        paragraph = string.Join($"{Environment.NewLine}{Environment.NewLine}", RosanjinService.Generate(paragraphCount));
+    }
+}
