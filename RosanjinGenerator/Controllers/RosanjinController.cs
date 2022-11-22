@@ -4,7 +4,7 @@ using RosanjinGenerator.Services;
 namespace RosanjinGenerator.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class RosanjinController : ControllerBase
 {
     readonly RosanjinService rosanjinService;
